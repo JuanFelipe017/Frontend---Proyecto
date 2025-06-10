@@ -43,4 +43,4 @@ Este repositorio contiene el **frontend** de la aplicación de búsqueda de pel�
 
 ## 📚 Enlaces útiles
 
-- [Repositorio Backend](https://github.com/JuanFelipe017/Backend-Proyecto)
+- [Repositorio Backend](https://github.com/JuanFelipe017/Backend---Proyecto)
