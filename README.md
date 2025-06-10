@@ -31,7 +31,7 @@ Este repositorio contiene el **frontend** de la aplicación de búsqueda de pel�
 
    > **Nota:** Si usas rutas relativas y quieres evitar problemas de CORS, puedes usar [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) de VSCode o algún servidor local.
 
-3. Asegúrate de tener el [backend](https://github.com/tuusuario/Backend---Proyecto) corriendo.
+3. Asegúrate de tener el [backend](https://github.com/JuanFelipe017/Backend---Proyecto) corriendo.
 
 ## 🧑‍💻 Funcionalidades
 
