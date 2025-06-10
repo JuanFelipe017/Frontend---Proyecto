@@ -1,0 +1,188 @@
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/frontend/img/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: #fff;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(16, 17, 20, 0.35);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Botón volver */
+.header-actions {
+    position: absolute;
+    top: 24px;
+    left: 40px;
+    display: flex;
+    gap: 16px;
+    z-index: 2;
+}
+.header-btn {
+    background: #1a1309;
+    color: #ffcc60;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+}
+.header-btn:hover {
+    background: #ff9900;
+    color: #191919;
+}
+@media (max-width: 600px) {
+    .header-actions {
+        position: static;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+}
+
+/* Contenedor formulario */
+.register-container {
+    background: rgba(10, 10, 10, 0.89);
+    max-width: 400px; 
+    min-width: 320px;
+    margin: 60px auto 0 auto;
+    margin-bottom: 40px;
+    padding: 38px 36px 32px 36px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px 0 rgba(255,153,0,0.14), 0 1.5px 6px 0 rgba(0,0,0,0.20);
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+form#registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 22px;
+    color: #ff9900;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 16px #000;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    color: #ffe299;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="tel"] {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1.5px solid #ff9900;
+    background-color: #181818;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s, background 0.2s;
+    font-family: inherit;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus,
+input[type="tel"]:focus {
+    border: 1.5px solid #ffcc60;
+    background-color: #222;
+}
+
+button[type="submit"] {
+    background: linear-gradient(90deg, #ff9900, #ff6600);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 16px;
+    box-shadow: 0 2px 18px rgba(255,153,0,0.12);
+    transition: background 0.2s, color 0.2s;
+    width: 100%;
+    display: block;
+    letter-spacing: 1px;
+}
+button[type="submit"]:hover {
+    background: #ffb84d;
+    color: #191919;
+}
+
+#registerMessage {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ff9900;
+    text-align: center; 
+    width: 100%;
+}
+
+.register-option {
+    margin-top: 24px;
+    text-align: center;
+    color: #ffe299;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+}
+
+.register-option a {
+    color: #ffcc60;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.register-option a:hover {
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .register-container {
+        max-width: 96vw;
+        min-width: unset;
+        padding: 20px 7vw;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buscador de Películas</title>
+  <link rel="stylesheet" href="css/estilo-index.css" />
+</head>
+<body>
+  <div class="header">
+    <div class="user-menu" style="float:right;">
+        <img src="img/icono.png" alt="Usuario" class="avatar" id="userAvatar"/>
+
+        <div class="dropdown" id="userDropdown">
+            <div id="noSessionMessage" style="display:none;">
+                <p style="margin:0; color: #fff;">No tienes sesión iniciada.</p>
+            </div>
+            <div id="userDataSection" style="display:none;">
+                <p><strong>Nombre:</strong> <span id="userName"></span></p>
+                <p><strong>Usuario:</strong> <span id="userUsername"></span></p>
+                <button id="logoutBtn">Cerrar sesión</button>
+            </div>
+        </div>
+    </div>
+    <div class="header-actions" id="headerActions">
+        <a href="login.html" class="header-btn">Iniciar sesión</a>
+        <a href="register.html" class="header-btn">Registrarse</a>
+    </div>
+    <h1>Buscador de Películas</h1>
+    <p>Explora información sobre tus películas favoritas, descubre nuevos títulos y consulta detalles al instante.</p>
+</div>
+  <div class="divider"></div>
+  <main>
+    <div class="scroll-container">
+      <form id="movieForm" autocomplete="off">
+        <fieldset>
+          <legend>Buscar por Título</legend>
+          <label for="Titulo">Título:</label>
+          <input type="text" id="Titulo" name="Titulo" placeholder="Ingrese título" required />
+
+          <div class="flex-row">
+            <div>
+              <label for="year">Año:</label>
+              <input type="text" id="year" name="year" placeholder="Año (opcional)" />
+            </div>
+            <div>
+              <label for="plot">Descripción:</label>
+              <select id="plot" name="plot">
+                <option value="short" selected>Corta</option>
+                <option value="full">Completa</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Formato de Respuesta</legend>
+          <div class="checkbox-group">
+            <input type="radio" id="jsonFormat" name="responseFormat" value="json" checked />
+            <label for="jsonFormat">JSON</label>
+            <input type="radio" id="xmlFormat" name="responseFormat" value="xml" />
+            <label for="xmlFormat">XML</label>
+          </div>
+        </fieldset>
+
+        <div class="flex-row buttons">
+          <button type="submit" id="searchBtn">Buscar</button>
+          <button type="reset" id="resetBtn">Reiniciar</button>
+        </div>
+      </form>
+
+      <div id="result"></div>
+    </div> </main>
+    
+  <script src="js/main.js"></script>
+</body>
+</html>
