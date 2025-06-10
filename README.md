@@ -25,13 +25,13 @@ Este repositorio contiene el **frontend** de la aplicación de búsqueda de pel�
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/JuanFelipe017/nombre-del-repo-frontend.git
+   git clone https://github.com/JuanFelipe017/Frontend---Proyecto
    ```
 2. Abre `index.html` en tu navegador.
 
    > **Nota:** Si usas rutas relativas y quieres evitar problemas de CORS, puedes usar [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) de VSCode o algún servidor local.
 
-3. Asegúrate de tener el [backend](https://github.com/tuusuario/nombre-del-repo-backend) corriendo.
+3. Asegúrate de tener el [backend](https://github.com/tuusuario/Backend---Proyecto) corriendo.
 
 ## 🧑‍💻 Funcionalidades
 
