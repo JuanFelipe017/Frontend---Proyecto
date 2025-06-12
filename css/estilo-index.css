@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('/frontend/img/1.jpg');
+  background-image: url('../img/1.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
