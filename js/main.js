@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (noSessionMessage) noSessionMessage.style.display = 'none';
       if (userDataSection) userDataSection.style.display = 'block';
       // Rellena datos usuario
-      document.getElementById('userName').textContent = user.name || "";
       document.getElementById('userUsername').textContent = user.username || "";
   } else {
       // Muestra login/registro, oculta menú usuario
